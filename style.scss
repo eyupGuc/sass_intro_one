@@ -111,6 +111,28 @@ header {
   }
 
   .card4 {
-    @include myBox(greenyellow, white);
+    @include myBox(gray, white);
+  }
+}
+
+//***** ARTİCLES ***/
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  .article1 {
+    background-color: gray;
+    width: 50%;
+    border: 1px solid black;
+    height: 10rem;
+
+    border-radius: 5px;
+  }
+  .article2 {
+    @extend .article1;
+    background-color: hotpink;
+    border-color: green;
   }
 }
