@@ -136,3 +136,20 @@ header {
     border-color: green;
   }
 }
+
+//***** FOOTER *****/
+$textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+footer {
+  .social-icons {
+    display: flex;
+    height: 10rem;
+  }
+  @for $i from 1 to 6 {
+    .social#{$i} {
+      width: 20%;
+      background-color: lighten(rgb(17, 93, 207), $i * 5);
+      font-size: $i * 1rem;
+      color: nth($list: $textColor, $n: $i);
+    }
+  }
+}
