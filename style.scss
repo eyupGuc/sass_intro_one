@@ -66,9 +66,51 @@ header {
   line-height: 2rem;
 
   aside {
+    button {
+      padding: 0.5rem;
+      border-radius: 5px;
+      background-color: $navBgColor;
+      border: none;
+      margin-top: 1rem;
+      &:hover {
+        background-color: pink;
+        cursor: pointer;
+      }
+    }
   }
-
   img {
     width: 30%;
+    min-width: 250px;
+    max-width: 400px;
+  }
+}
+
+//**** CARDS ******/
+@mixin myBox($backColor, $Color) {
+  background-color: $backColor;
+  color: $Color;
+  width: 25%;
+  height: 15rem;
+  border: $myBorder;
+  border-radius: 5px;
+}
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  .card1 {
+    @include myBox(green, white);
+  }
+
+  .card2 {
+    @include myBox(brown, white);
+  }
+
+  .card3 {
+    @include myBox(yellow, black);
+  }
+
+  .card4 {
+    @include myBox(greenyellow, white);
   }
 }
