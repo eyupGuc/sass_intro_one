@@ -38,4 +38,15 @@ header a {
   text-decoration: none;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: hotpink;
+  padding: 1rem;
+  line-height: 2rem;
+}
+.banner img {
+  width: 40%;
+}
+
 /*# sourceMappingURL=style.css.map */
